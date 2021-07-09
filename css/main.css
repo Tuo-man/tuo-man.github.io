@@ -93,7 +93,7 @@ body {
 */
   font-family: sans-serif;
   color: #fff6cc;
-  background-image: linear-gradient(rgb(42,74,87), rgb(88, 200, 152));
+  background-image: linear-gradient(rgb(88, 200, 152), rgb(42,74,87));
   font-size: larger;
   text-align: center;
 }
@@ -220,6 +220,7 @@ div.kuvat img {
   padding-right: 5%;
   max-height: 420px;
   max-width: 40%; */
+  padding: -15%;
   transform: scale(0.67, 0.67);
   transition-delay: 125ms;
   transition: ease-in-out 0.420s;
@@ -247,7 +248,7 @@ div.kuvat img:hover {
 div.moni {
   display: block;
   margin: auto;
-  max-width: 87%;
+  max-width: 80%;
 /*  margin-left: 10%;
   margin-right: 1.5%;
   margin-top: 1.5%;
@@ -264,7 +265,7 @@ div.moni {
 }
 
 div.moni:hover {
-  max-width: 96%;
+  max-width: 87%;
   /*
   max-height: 96%; */
   border: 3px dashed orange;
@@ -299,8 +300,8 @@ div.moni img:hover {
   margin-bottom: -5%;
   padding-top: 35px;
   padding-bottom: 75px;
-  padding-left: 10%;
-  padding-right: 10%; */
+  padding-left: -5%; */
+  padding: -5%;
   transform: scale(1.0, 1.0);
   transition-delay: 125ms;
   transition: ease-in-out 0.420s;
@@ -324,7 +325,7 @@ div.wide {
   margin: auto;
   border: 2px solid orangered;
   padding: 2%;
-  padding-top: 10%;
+  padding-top: 5%;
   padding-bottom: 7,5%;
   /*
   float: left;
