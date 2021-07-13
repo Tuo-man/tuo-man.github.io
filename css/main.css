@@ -91,11 +91,45 @@ body {
 /*
   background-color: rgb(42, 74, 87);
 */
+  margin: 0;
+  margin-top: 150px;
   font-family: sans-serif;
   color: #fff6cc;
   background-image: linear-gradient(rgb(88, 200, 152), rgb(42,74,87));
   font-size: larger;
   text-align: center;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(90, 87, 59);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: rgb(100, 90, 116);
+}
+
+.active {
+  background-color: #04AA6D;
 }
 
 h1,h2 
@@ -124,17 +158,8 @@ p {
 /*    border: 2px solid powderblue;
     padding: 30px left right 20%;
 */
-  }
-
-/*
-
-.zoomeri:hover {
-  height: 900px;
-  width: 1920px;
-  height: auto;
 }
 
-*/
 
 div {
   display:block;
@@ -147,7 +172,8 @@ div {
   height: 333px; 
   width: 667px;
   */
-  transition: all 333ms;
+  transition: all 33ms;
+  z-index: 2;
 }
 
 /*
@@ -164,6 +190,59 @@ div.grid-container {
   gap: 75px;
 }
 */
+
+div.thumbs {
+  display: block;
+  margin: auto; 
+  max-width: 33%;
+  border: 2px solid cyan;
+  padding: 1.5%;
+  transform: scale(0.96, 0.96);
+  transition-delay: 125ms;
+  transition: ease-in-out 0.420s;
+}
+
+
+div.thumbs:hover {
+  border: 3px dashed blue;
+  border-radius: 9px;
+  transform: scale(1.0, 1.0);
+  transition-delay: 12ms;
+  transition: ease-in-out 0.420s;
+  width: auto;
+}
+
+div.thumb-desc {
+  transform: scale(1,1)
+}
+
+div.midbox {
+  display: block;
+  margin-left: 25%;
+  margin-right: 25%;
+  margin: auto;
+  padding: 5%;
+  border: 3px solid yellow;
+  max-width: 480px;
+  transition: ease-in-out 0.420s;
+  transform: scale(0.8,0.8);
+  width: auto;
+}
+
+div.midbox:hover {
+  margin: auto;
+  padding: auto;
+  max-width: 25%;
+  border: 3px dotted orange;
+  transform: scale(1,1);
+  transition-delay: 12ms;  
+  transition: ease-in-out 0.420s;
+  width: Auto;
+}
+
+div.midbox img {
+  max-width: 420px;
+}
 
 
 div.kuvat {
@@ -405,30 +484,30 @@ img:hover {
   transform: scale(1.33, 1.33);
   height: auto;
 }
+
 */
 
-a:link {
+div.a:link {
   font-size: 100%;
-  transition: ease-in-out, all, 0.2s;
+  transition: ease-in-out, all, 125ms;
   transition-delay: 0.3s;
 }
 
-a:hover {
-  font-size: 167%;
+div.a:hover {
   color: yellowgreen;
   transition: all, ease-in-out, 0.3s;
   transition-delay: 0.1s;
 }
 
-a:visited {
-  font-size: 87%;
+div.a:visited {
   color:rgb(4, 4, 134)
 }
 
-a:active {
-  transform: rotate(180deg);
+div.a:active {
+  transition: all, 125ms;
 }
 
+/*
 
 ul {
   list-style-type: none;
@@ -445,10 +524,8 @@ li a {
   text-decoration: rgb(4, 4, 134);
 }
 
-/* Change the link color on hover */
-li a:hover {
-  font-size: larger;
-  transform: scale(1.67);  
+Change the link color on hover
+li a:hover { 
   background-color: #555;
   color: yellowgreen;
   ;
@@ -473,6 +550,8 @@ li {
 li:last-child {
   border-bottom: none;
 }
+
+*/
 
 /* ==========================================================================
    Helper classes
