@@ -275,6 +275,16 @@ div.frontbox:hover {
   width: Auto;
 }
 
+div.nextbox {
+  transform: scale(1.0,1.0);
+}
+
+div.nextbox:hover {
+  transform: scale(1.2,1.2);
+  transition-delay: 120ms;
+  transition: ease-in-out 0.67s;
+}
+
 div.kuvat {
   display: block;
   margin: auto;
